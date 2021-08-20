@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Web charset -->
+    <meta charset="utf-8">
+    <!-- Web title -->
+    <title>My Tasks</title>
+    <!--Main wep stayle sheat-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome style -->
+    <link rel="stylesheet" href="css/all.min.css">
+  </head>
+  <body>
+    <!-- parent class -->
+    <div class = "parent-container">
+      <!-- Header part -->
+      <header>
+        <div class = "web-logo">
+          <i class="fas fa-check" style = "color : #FFD500; font-size : 55px; display: none"></i>
+          <i class="fas fa-check-circle"></i>
+          <h1>My Tasks</h1>
+        </div>
+        <div class = "nav-list">
+          <div class = "lin1"></div>
+          <div class = "lin2"></div>
+          <div class = "lin3"></div>
+        </div>
+      </header>
+      <div class = "web-body">
+        <!-- Nav par -->
+        <div class = "nav-side">
+          <button type = "button" class = "add-task-list">+</button>
+          <nav>
+            <button type = "button" class = "add-task-list-phone">+</button>
+
+            <button type = "button" class = "close-nav-list">Close</button>
+          </nav>
+
+        </div>
+        <!-- Sections part -->
+        <section>
+          <!-- Dark Mood -->
+          <div class = "mood">
+            <div class="mood-point blue-mood">
+
+            </div>
+
+            <div class="mood-point dark-mood">
+
+            </div>
+          </div>
+          <!-- Section 1 -->
+          <div class = "task-list" id = "a1">
+            <button class = "x closing">X</button>
+            <h2>Study Tasks</h2>
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Study Math ch1 & ch2">
+              <label for="task-item">Study Math ch1 & ch2</label>
+              <button class = "x">X</button>
+            </div>
+
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Study French ch3">
+              <label for="task-item">Study French ch3</label>
+              <button class = "x">X</button>
+            </div>
+
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Study Static last chapter">
+              <label for="task-item">Study Static last chapter</label>
+              <button class = "x">X</button>
+            </div>
+
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Study Programing">
+              <label for="task-item">Study Programing</label>
+              <button class = "x">X</button>
+            </div>
+          </div>
+
+          <!-- Section 2 -->
+          <div class = "task-list" id = "a2">
+            <button class = "x closing">X</button>
+            <h2>Sport Tasks</h2>
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Run for 3k">
+              <label for="task-item">Run for 3k</label>
+              <button class = "x">X</button>
+            </div>
+
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Play boxing">
+              <label for="task-item">Play boxing</label>
+              <button class = "x">X</button>
+            </div>
+          </div>
+
+          <!-- Section 3 -->
+          <div class = "task-list" id = "a3">
+            <button class = "x closing">X</button>
+            <h2>Reading Tasks</h2>
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Reading a short Story">
+              <label for="task-item">Reading a short Story</label>
+              <button class = "x">X</button>
+            </div>
+
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Reading a Novel">
+              <label for="task-item">Reading a Novel</label>
+              <button class = "x">X</button>
+            </div>
+          </div>
+
+          <!-- Section 4 -->
+          <div class = "task-list" id = "a4">
+            <button class = "x closing">X</button>
+            <h2>To day Tasks</h2>
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Do Home works">
+              <label for="task-item">Do Home works</label>
+              <button class = "x">X</button>
+            </div>
+
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Rev: the lessons">
+              <label for="task-item">Rev: the lessons</label>
+              <button class = "x">X</button>
+            </div>
+
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Doing part of my udacity projekt">
+              <label for="task-item">Doing part of my udacity projekt</label>
+              <button class = "x">X</button>
+            </div>
+
+            <div class = "item">
+              <input type="checkbox" name = "task-item" value = "Take a part of my new cours">
+              <label for="task-item">Take a part of my new cours</label>
+              <button class = "x">X</button>
+            </div>
+          </div>
+        </section>
+        <footer>
+          Created in 2021
+        </footer>
+      </div>
+
+      <!-- Filter & user-task-maker part -->
+      <div class = "filter">
+        <div class = "user-task-maker">
+          <input class = "list-title" type = "text" placeholder="Tasks list title"/>
+          <div class = "add-task-item">
+            <input class = "a-task-item" type = "text" placeholder="Add task"/>
+            <button type="button" class="add-item-to-list">Add</button>
+          </div>
+          <div class="buttons-container">
+            <button type="button" class = "close-interface">Close</button>
+            <button type="button" class = "add-list-of-tasks">Add the list</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src = "js/app.js">
+    </script>
+  </body>
+</html>
